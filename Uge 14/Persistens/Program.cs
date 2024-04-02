@@ -18,6 +18,7 @@ namespace Persistens
             DataHandler handler = new DataHandler("Data.txt");
             handler.LoadPerson();
 
+            Console.WriteLine("Hej gutter/inder");
             Console.ReadLine();	
 		}
 	}
