@@ -19,7 +19,7 @@ namespace Persistens
             DataHandler handler = new DataHandler("Data.txt");
             handler.SavePersons(person);
 
-            Console.WriteLine("Hej gutter/inder");
+            Console.WriteLine("hej med jer");
             Console.ReadLine();	
 		}
 	}
