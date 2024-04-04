@@ -8,15 +8,16 @@ namespace Persistens
 		{
             //Person person = new Person("Anders Andersen", new DateTime(1975, 8, 24), 175.9, true, 3);
 
-            // DataHandler handler = new DataHandler("Data.txt");
+            //DataHandler handler = new DataHandler("Data.txt");
             //handler.SavePerson(person);
 
             //Console.Write("Writing person: ");
             //Console.WriteLine(person.MakeTitle());
+            //Console.WriteLine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments));
 
-
+            Person person = new Person("Anders Andersen", new DateTime(1975, 8, 24), 175.9, true, 3);
             DataHandler handler = new DataHandler("Data.txt");
-            handler.LoadPerson();
+            handler.SavePersons(person);
 
             Console.WriteLine("Hej gutter/inder");
             Console.ReadLine();	
