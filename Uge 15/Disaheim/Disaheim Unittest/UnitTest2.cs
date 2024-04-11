@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Disaheim;
+using UtilityLib;
 
 namespace Disaheim_Unittest
 {
@@ -16,6 +17,8 @@ namespace Disaheim_Unittest
 		Book b1, b2, b3;
 
 		Amulet a1, a2, a3;
+
+		Course c1, c2, c3;
 
 		Utility utility;
 
@@ -38,6 +41,12 @@ namespace Disaheim_Unittest
 			a2 = new Amulet("12", Level.high);
 
 			a3 = new Amulet("13", Level.low, "Capricorn");
+
+			c1 = new Course("Spådomskunst for nybegyndere");
+
+			c2 = new Course("Magi – når videnskaben stopper", 157);
+
+			c3 = new Course("Et indblik i Helleristning", 180);
 
 			utility = new Utility();
 
@@ -112,6 +121,40 @@ namespace Disaheim_Unittest
 			// Assert
 
 			Assert.AreEqual(12.5, Utility.GetValueOfAmulet(a3));
+
+		}
+		[TestMethod]
+
+		public void TestGetValueForCourse1()
+
+		{
+
+			// Assert
+
+			Assert.AreEqual(0.0, Utility.GetValueOfCourse(c1));
+
+		}
+
+		[TestMethod]
+
+		public void TestGetValueForCourse2()
+
+		{
+
+			// Assert
+
+			Assert.AreEqual(2625.0, Utility.GetValueOfCourse(c2));
+
+		}
+
+		[TestMethod]
+
+		public void TestGetValueForCourse3()
+		{
+
+			// Assert
+
+			Assert.AreEqual(2625.0, Utility.GetValueOfCourse(c3));
 
 		}
 

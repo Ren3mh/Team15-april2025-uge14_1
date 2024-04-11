@@ -10,6 +10,7 @@ namespace Disaheim
 	{
 		public List<Book> Books = new List<Book>();
 		public List<Amulet> Amulets = new List<Amulet>();
+		public List<Course> Courses = new List<Course>();
 
 		public Controller()
 		{
@@ -23,6 +24,10 @@ namespace Disaheim
 		public void AddToList(Amulet amulet)
 		{
 			Amulets.Add(amulet);
+		}
+		public void AddToList(Course course)
+		{
+			Courses.Add(course);
 		}
        
 	}
