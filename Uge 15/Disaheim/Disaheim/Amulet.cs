@@ -17,16 +17,16 @@ namespace Disaheim
 		public string Design { get; set; }
 		public Level Quality { get; set; }
 
-		public Amulet(string itemId) : base(itemId)
+		public Amulet(string itemId)
 		{
 			ItemId = itemId;
 		}
-		public Amulet(string itemId, Level quality) : base(itemId)
+		public Amulet(string itemId, Level quality)
 		{
 			ItemId = itemId;
 			Quality = quality;
 		}
-		public Amulet(string itemId, Level quality, string design) : base(itemId)
+		public Amulet(string itemId, Level quality, string design)
 		{
 			ItemId = itemId;
 			Quality = quality;
