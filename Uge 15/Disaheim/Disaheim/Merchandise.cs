@@ -10,10 +10,17 @@ namespace Disaheim
     {
         public string ItemId { get; set; }
 
-        //public Merchandise(string itemId)
-        //{
-        //    ItemId = itemId;
-        //}
+        public Merchandise()
+        { 
+        
+        }
+
+        public Merchandise(string itemId)
+        {
+            ItemId = itemId;
+        }
+
+
 
         public abstract string ToString();        
     }

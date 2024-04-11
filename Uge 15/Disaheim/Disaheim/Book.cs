@@ -8,7 +8,7 @@ namespace Disaheim
 {
 	public class Book : Merchandise
 	{
-			string Title { get; set; }
+			public string Title { get; set; }
 			public double Price { get; set; }
 
 			public Book(string itemId)
@@ -20,7 +20,7 @@ namespace Disaheim
 				ItemId = itemId;
 				Title = title;
 			}
-			public Book(string itemId, string title, double price)
+			public Book(string itemId, string title, double price) 	
 			{
 				ItemId = itemId;
 				Title = title;
