@@ -15,9 +15,9 @@ namespace Disaheim
             ItemId = itemId;
         }
 
-        public string ToString()
+        public virtual string ToString()
         { 
-            return "";
+           return "ItemId: " + ItemId;
         }
         
     }
